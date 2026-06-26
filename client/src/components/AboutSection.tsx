@@ -239,6 +239,74 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
+
+            {/* Courses */}
+            <div
+              className="p-5 rounded-lg"
+              style={{
+                background: "rgba(17, 24, 39, 0.8)",
+                border: "1px solid rgba(245, 158, 11, 0.15)",
+              }}
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-lg">📚</span>
+                <span
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontWeight: 700,
+                    fontSize: "0.95rem",
+                    color: "#F1F5F9",
+                  }}
+                >
+                  Codecademy Courses
+                </span>
+              </div>
+              <div className="space-y-2">
+                {[
+                  "Intermediate Learn Node.js",
+                  "Introduction to Linux: Bash Scripting",
+                  "Introduction to Linux: Users and Permissions",
+                  "Learn Node-SQLite",
+                  "Build a Machine Learning Pipeline",
+                  "Introduction to Linux: Installation",
+                  "Introduction to DevOps Culture and Processes",
+                  "Prompt Engineering for System Design",
+                  "Using Git for DevOps: Using Git Effectively",
+                ].map((course) => (
+                  <div key={course} className="flex items-start gap-2">
+                    <span
+                      className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full"
+                      style={{ background: "#F59E0B", boxShadow: "0 0 6px #F59E0B" }}
+                    />
+                    <span
+                      style={{
+                        fontFamily: "'Inter', sans-serif",
+                        fontSize: "0.8rem",
+                        color: "#94A3B8",
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      {course}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <a
+                href="https://www.codecademy.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 text-xs"
+                style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  color: "#F59E0B",
+                  textDecoration: "none",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
+                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
+              >
+                View on Codecademy →
+              </a>
+            </div>
           </div>
         </div>
       </div>

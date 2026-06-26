@@ -258,7 +258,7 @@ export default function AboutSection() {
                     color: "#F1F5F9",
                   }}
                 >
-                  Codecademy Courses
+                  Codecademy Courses Enrolled & Completed
                 </span>
               </div>
               <div className="space-y-2">
@@ -291,21 +291,7 @@ export default function AboutSection() {
                   </div>
                 ))}
               </div>
-              <a
-                href="https://www.codecademy.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-3 text-xs"
-                style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  color: "#F59E0B",
-                  textDecoration: "none",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
-              >
-                View on Codecademy →
-              </a>
+
             </div>
           </div>
         </div>

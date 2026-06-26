@@ -100,26 +100,7 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
-            <a
-              href="mailto:jessiegodezano20@gmail.com"
-              className="ml-3 px-4 py-2 rounded text-sm font-bold transition-all duration-200"
-              style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                background: "linear-gradient(135deg, #00D9FF 0%, #0099CC 100%)",
-                color: "#0B0F1A",
-                boxShadow: "0 0 16px rgba(0, 217, 255, 0.3)",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 28px rgba(0, 217, 255, 0.5)";
-                (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(-1px)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 16px rgba(0, 217, 255, 0.3)";
-                (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(0)";
-              }}
-            >
-              Hire Me
-            </a>
+
           </nav>
 
           {/* Mobile hamburger */}
@@ -177,17 +158,7 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
-            <a
-              href="mailto:jessiegodezano20@gmail.com"
-              className="mt-2 px-4 py-3 rounded text-sm font-bold text-center"
-              style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                background: "linear-gradient(135deg, #00D9FF 0%, #0099CC 100%)",
-                color: "#0B0F1A",
-              }}
-            >
-              Hire Me
-            </a>
+
           </div>
         </div>
       )}

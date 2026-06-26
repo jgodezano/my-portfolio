@@ -239,12 +239,7 @@ export default function HeroSection() {
               >
                 View My Projects →
               </button>
-              <a
-                href="mailto:jessiegodezano20@gmail.com"
-                className="btn-outline-cyan px-6 py-3 rounded text-sm font-semibold"
-              >
-                Get In Touch
-              </a>
+
               <a
                 href="https://linkedin.com/in/jessie-e-godezano-2648a2246"
                 target="_blank"

@@ -200,28 +200,6 @@ export default function ContactSection() {
                 transition: "opacity 0.6s cubic-bezier(0.23,1,0.32,1) 0.3s",
               }}
             >
-              <a
-                href="mailto:jessiegodezano20@gmail.com"
-                className="btn-cyan px-6 py-3 rounded text-sm font-bold inline-block"
-                style={{
-                  fontFamily: "'Space Grotesk', sans-serif",
-                  background: "linear-gradient(135deg, #00D9FF 0%, #0099CC 100%)",
-                  color: "#0B0F1A",
-                  textDecoration: "none",
-                  boxShadow: "0 0 20px rgba(0,217,255,0.3)",
-                  transition: "all 0.2s cubic-bezier(0.23,1,0.32,1)",
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 35px rgba(0,217,255,0.5)";
-                  (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(-1px)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 20px rgba(0,217,255,0.3)";
-                  (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(0)";
-                }}
-              >
-                Send Email →
-              </a>
               <button
                 onClick={handleCopyEmail}
                 className="btn-outline-cyan px-6 py-3 rounded text-sm font-semibold"

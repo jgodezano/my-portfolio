@@ -82,60 +82,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            {/* Contact info */}
-            <div className="mt-8 space-y-2">
-              {[
-                { label: "Location", value: "Mandaluyong City, Philippines" },
-                { label: "Email", value: "jessiegodezano20@gmail.com", href: "mailto:jessiegodezano20@gmail.com" },
-                { label: "Phone", value: "+63 935 311 9416", href: "tel:+639353119416" },
-                { label: "LinkedIn", value: "jessie-e-godezano-2648a2246", href: "https://linkedin.com/in/jessie-e-godezano-2648a2246" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-center gap-3">
-                  <span
-                    style={{
-                      fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: "0.7rem",
-                      color: "#00D9FF",
-                      letterSpacing: "0.06em",
-                      textTransform: "uppercase",
-                      minWidth: "72px",
-                    }}
-                  >
-                    {item.label}
-                  </span>
-                  <span
-                    style={{
-                      width: "1px",
-                      height: "12px",
-                      background: "rgba(0,217,255,0.3)",
-                      flexShrink: 0,
-                    }}
-                  />
-                  {item.href ? (
-                    <a
-                      href={item.href}
-                      target={item.href.startsWith("http") ? "_blank" : undefined}
-                      rel="noopener noreferrer"
-                      style={{
-                        fontFamily: "'Inter', sans-serif",
-                        fontSize: "0.875rem",
-                        color: "#94A3B8",
-                        textDecoration: "none",
-                        transition: "color 0.15s",
-                      }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = "#00D9FF")}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = "#94A3B8")}
-                    >
-                      {item.value}
-                    </a>
-                  ) : (
-                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", color: "#94A3B8" }}>
-                      {item.value}
-                    </span>
-                  )}
-                </div>
-              ))}
-            </div>
+
           </div>
 
           {/* Right: Highlights + Education */}

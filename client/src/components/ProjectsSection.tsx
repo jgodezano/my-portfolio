@@ -317,14 +317,14 @@ export default function ProjectsSection() {
             }}
           >
             Have a project in mind?{" "}
-            <a
-              href="mailto:jessiegodezano20@gmail.com"
-              style={{ color: "#00D9FF", textDecoration: "none" }}
+            <button
+              onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
+              style={{ color: "#00D9FF", textDecoration: "none", background: "none", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: "0.875rem" }}
               onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
               onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
             >
               Let's build it together →
-            </a>
+            </button>
           </p>
         </div>
       </div>

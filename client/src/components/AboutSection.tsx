@@ -64,21 +64,22 @@ export default function AboutSection() {
             <div className="space-y-4" style={{ color: "#64748B", lineHeight: 1.8, fontFamily: "'Inter', sans-serif", fontSize: "0.95rem" }}>
               <p>
                 I'm an <strong style={{ color: "#94A3B8" }}>L2 Support Specialist and Application Support Engineer</strong> based
-                in Mandaluyong City, Philippines, with 3+ years of hands-on experience
-                keeping live platforms healthy — from gaming systems to school information
-                platforms.
+                in Mandaluyong City, Philippines, with 3+ years of experience keeping
+                live production systems running — from gaming platforms to school
+                information systems.
               </p>
               <p>
-                My day-to-day involves triaging escalated incidents, tracing API failures
-                end-to-end through Kubernetes logs, BigQuery, and MongoDB, and coordinating
-                with L3 engineers to resolve issues before they reach customers. I don't
-                just fix problems — I build tools that prevent them.
+                My day-to-day is incident triage: tracing API failures end-to-end across
+                Kubernetes logs, BigQuery, and MongoDB, then coordinating with L3 engineers
+                to resolve issues before they reach users. I also build tools that prevent
+                those issues from happening again.
               </p>
               <p>
-                I built AI-powered Telegram bots that let support teams query player data
-                in plain English, eliminating manual database lookups. I've managed
-                deployment pipelines, Helm chart updates, and container configurations
-                across Jenkins, GitHub Actions, and GitLab CI.
+                I built AI-powered Telegram bots connected to ChatGPT and Claude APIs,
+                letting support teams query player accounts and transactions in plain
+                English — eliminating manual database lookups entirely. On the infrastructure
+                side, I manage CI/CD pipelines, Helm chart deployments, and container
+                configurations across Jenkins, GitHub Actions, and GitLab CI.
               </p>
             </div>
 
